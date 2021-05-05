@@ -1,12 +1,11 @@
 <template>
-  <hello-SPA></hello-SPA>
+  <router-view/>
 </template>
 
 <script>
-import HelloSPA from './components/HelloSPA'
+
 export default {
-  name: 'App',
-  components: {HelloSPA}
+  name: 'App'
 }
 </script>
 
