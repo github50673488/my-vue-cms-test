@@ -1,5 +1,8 @@
 <template>
   <div>
+    <button type="button" class="mui-btn mui-btn-royal">
+      紫色
+    </button>
     <h3>{{ msg }}</h3>
     <mt-button type="primary" size="large" plain icon="back" @click="showToast">primary</mt-button>
     <router-link to="/child1">child1</router-link>

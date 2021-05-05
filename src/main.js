@@ -8,6 +8,8 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import './css/app.css'
 
+import './lib/mui/css/mui.min.css'
+
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
