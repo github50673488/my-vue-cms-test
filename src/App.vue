@@ -1,17 +1,12 @@
 <template>
-  <div id="app">
-    {{ msg }}
-  </div>
+  <hello-SPA></hello-SPA>
 </template>
 
 <script>
+import HelloSPA from './components/HelloSPA'
 export default {
   name: 'App',
-  data: function () {
-    return {
-      msg: '123dd'
-    }
-  }
+  components: {HelloSPA}
 }
 </script>
 
