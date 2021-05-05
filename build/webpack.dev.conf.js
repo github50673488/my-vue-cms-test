@@ -44,7 +44,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       poll: config.dev.poll,
     }
   },
-  plugins: [
+  plugins: [// 所有webpack  插件的配置节点
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
@@ -53,8 +53,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
+      filename: 'index.html',// 设置生成的内存页面的名称
+      template: 'index.html',// 指定模板文件路径
       inject: true
     }),
     // copy custom static assets
