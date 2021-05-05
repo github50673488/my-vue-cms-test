@@ -8,6 +8,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+body {
+
+  h3 {
+    color: red;
+    font-style: italic;
+  }
+
+}
 
 </style>
