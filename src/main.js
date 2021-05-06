@@ -4,11 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-// 导入bootstrap样式
-import 'bootstrap/dist/css/bootstrap.css'
-import './css/app.css'
-
+// 导入 MUI 的样式
 import './lib/mui/css/mui.min.css'
+// 导入扩展图标样式
+import './lib/mui/css/icons-extra.css'
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
