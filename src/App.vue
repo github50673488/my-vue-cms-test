@@ -7,7 +7,7 @@
       <!--      </span>-->
     </mt-header>
 
-<!--    <router-view/>-->
+    <router-view/>
 
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item " to="/home">
