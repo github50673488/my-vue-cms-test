@@ -18,15 +18,7 @@ Vue.use(MintUI)
 
 // eslint-disable-next-line no-new
 new Vue({
-  el: '#app',
-  router,
-  components: {App},
-  template: '<App/>'
+  'el': '#app',
+  'render': c => c(App), // 需要 JavaScript 的完全编程的能力。这时你可以用渲染函数，它比模板更接近编译器
+  router // 1.4 挂载路由对象到 VM 实例上
 })
-
-// eslint-disable-next-line no-new
-// new Vue({
-//   'el': '#app',
-//   'render': c => c(App), // 需要 JavaScript 的完全编程的能力。这时你可以用渲染函数，它比模板更接近编译器
-//   router // 1.4 挂载路由对象到 VM 实例上
-// })
