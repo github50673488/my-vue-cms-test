@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloSPA from '../components/HelloSPA'
 import Home from '../components/tabbar/HomeContainer'
 import Member from '../components/tabbar/MemberContainer'
 import Search from '../components/tabbar/SearchContainer'
@@ -12,7 +11,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: HelloSPA
+      redirect: '/home'
     },
     {
       path: '/home',
