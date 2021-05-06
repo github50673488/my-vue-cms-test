@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
 // 导入 MUI 的样式
 import './lib/mui/css/mui.min.css'
 // 导入扩展图标样式
@@ -11,6 +10,15 @@ import './lib/mui/css/icons-extra.css'
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+
+// 2.1 导入 vue-resource
+import VueResource from 'vue-resource'
+// 2.2 安装 vue-resource
+Vue.use(VueResource)
+// 设置请求的根路径
+Vue.http.options.root = 'http://api.cms.liulongbin.top'
+// 全局设置 post 时候表单数据格式组织形式   application/x-www-form-urlencoded
+Vue.http.options.emulateJSON = true
 
 Vue.config.productionTip = false
 
