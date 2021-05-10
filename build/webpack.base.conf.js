@@ -10,7 +10,7 @@ function resolve (dir) {
 }
 
 const createLintingRule = () => ({
-  test: /\.(vue)$/,
+  test: /\.(js|vue)$/,
   loader: 'eslint-loader',
   enforce: 'pre',
   include: [resolve('src'), resolve('test')],
@@ -52,6 +52,10 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',// 配置 Babel 来转换高级的ES语法
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+      },
+      {
+        test: /vue-preview.src.*?js$/,
+        loader: 'babel',
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

@@ -17,6 +17,7 @@
 
     <!-- 图片列表区域 -->
     <ul class="photo-list">
+<!--   把li换成 router-link后 要注意   tag="li" ！！-->
       <router-link v-for="item in list" :key="item.id" :to="'/home/photoinfo/' + item.id" tag="li">
         <img v-lazy="item.img_url">
         <div class="info">
@@ -32,7 +33,7 @@
 <script>
 // 1. 导入 mui 的js文件
 // import mui from '../../lib/mui/js/mui.min.js'
-
+// import { mui } from '../../lib/mui/js/mui.min.js'
 export default {
   data () {
     return {
@@ -80,6 +81,10 @@ export default {
 * {
   touch-action: pan-y;
 }
+
+//.mui-slider {
+//  margin-top: 40px;
+//}
 
 .photo-list {
   list-style: none;

@@ -41,6 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .app-container {
   padding-top: 40px;
   padding-bottom: 50px;
@@ -63,4 +64,7 @@ export default {
   transition: all 0.5s ease;
 }
 
+.mint-header {
+  z-index: 99;
+}
 </style>
